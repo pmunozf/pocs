@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+#
+# Pablo Munoz (c) 2018
+#
+# Submit ping command to Rpc Daemon
+#
+import logging
+from rpcDaemon import RpcDaemon
+logging.basicConfig(filename='log', filemode='a', level=logging.DEBUG)
+
+if __name__ == '__main__':
+    d = RpcDaemon()
+    d.stop()
+    print('Daemon stopped')
