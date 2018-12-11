@@ -6,7 +6,7 @@
 #
 #
 import logging
-FORMAT = 'level: %(levelname)s thread:%(threadName)s module: %(module)s %(asctime)-15s %(clientip)s %(user)-8s %(message)s'
+FORMAT = 'level: %(processName)s thread:%(threadName)s module: %(module)s %(asctime)-15s %(clientip)s %(user)-8s %(message)s'
 logging.basicConfig(filename='example.log', level=logging.DEBUG, format=FORMAT)
 
 # Default logging keys
